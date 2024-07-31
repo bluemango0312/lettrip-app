@@ -1,8 +1,9 @@
-# lettrip-app
+# Lettrip
 
-렛트립 Android ✈️ </br>
-영남대학교 컴퓨터공학과 졸업작품
+Lettrip Android ✈️ </br>
+영남대학교 컴퓨터공학과 19학번 졸업작품
 
-[정후](https://github.com/bluemango0312)
+### 팀원
+[정후의 Github](https://github.com/bluemango0312)
 
-[충열](https://github.com/kchot10)
+[충열 Github](https://github.com/kchot10)
