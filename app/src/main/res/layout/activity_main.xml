@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="#FFFFFF"
     android:orientation="vertical"
-    tools:context=".MainActivity">
+    tools:context=".main.MainActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -39,18 +39,60 @@
 
 
     <Button
-        android:id="@+id/withdraw_button"
+        android:id="@+id/button_board"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:backgroundTint="#515674"
-        android:text="회원탈퇴" />
+        android:text="Article"
+        android:textColor="@color/white" />
 
     <Button
-        android:id="@+id/button_login"
+        android:id="@+id/button_record"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="login"
-        android:layout_gravity="center" />
+        android:layout_gravity="center"
+        android:text="후기 기록하기"
+        android:textColor="@color/white" />
+
+    <Button
+        android:id="@+id/button_plan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="코스 계획하기"
+        android:textColor="@color/white" />
+
+    <Button
+        android:id="@+id/button_search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="여행 검색하기"
+        android:textColor="@color/white" />
+
+    <Button
+        android:id="@+id/searchReview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="해당 장소 리뷰 보기"
+        android:textColor="@color/white" />
+
+    <Button
+        android:id="@+id/missionBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="미션 페이지"
+        android:textColor="@color/white" />
+
+    <Button
+        android:id="@+id/mypage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="마이페이지"
+        android:textColor="@color/white" />
+
 
 </LinearLayout>

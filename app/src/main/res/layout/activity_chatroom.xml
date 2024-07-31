@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="110dp"
+            android:layout_weight="1"
+            android:background="#F1F1F1"
+            android:paddingLeft="18dp"
+            android:paddingTop="28dp"
+            android:paddingRight="18dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/topbar">
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/chat_user_name"
+            android:orientation="vertical"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <LinearLayout
+                android:id="@+id/topbar"
+                android:layout_width="match_parent"
+                android:layout_height="63dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/leave"
+                    android:layout_width="18dp"
+                    android:layout_height="22dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="18dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:src="@drawable/left_arrow_black" />
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="15dp"
+                    android:background="@drawable/meetup_profile_round"
+                    android:src="@drawable/profile_photo_mypage" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:id="@+id/partnerName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginStart="10dp"
+                        android:fontFamily="@font/inter_bold"
+                        android:text="username"
+                        android:textSize="18sp"
+                        android:visibility="visible" />
+
+                    <TextView
+                        android:id="@+id/typing"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginStart="7dp"
+                        android:layout_marginTop="6dp"
+                        android:layout_marginBottom="5dp"
+                        android:fontFamily="@font/mont_light"
+                        android:text="Typing........"
+                        android:textSize="12dp"
+                        android:visibility="invisible" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/meetupIcon"
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
+                    android:layout_marginLeft="28dp"
+                    android:layout_marginRight="9dp"
+                    app:srcCompat="@drawable/chat_meetup_post_icon" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/postTitle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="2dp"
+                        android:fontFamily="@font/inter"
+                        android:text="콘서트 동행 구합니다 ~!"
+                        android:textSize="12sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/city1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="3dp"
+                            android:fontFamily="@font/inter_semibold"
+                            android:text="서울특별시"
+                            android:textSize="11sp" />
+
+                        <TextView
+                            android:id="@+id/city2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/inter"
+                            android:text="서울"
+                            android:textSize="11sp" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <ImageButton
+                    android:id="@+id/postBtn"
+                    android:layout_width="77dp"
+                    android:layout_height="26dp"
+                    android:layout_marginRight="18dp"
+                    android:background="#FFFFFF"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/chat_post_go" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="9dp"
+        android:layout_marginBottom="7dp"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/plusBtn"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:background="#FFFFFF"
+
+            android:scaleType="fitCenter"
+            android:src="@drawable/plus_button" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/editTextLayout"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:layout_weight="1"
+            android:background="@drawable/chat_input_background"
+            android:gravity="center_vertical"
+            android:hint="@string/send"
+            android:paddingStart="15dp"
+            android:paddingEnd="10dp"
+            android:paddingBottom="5dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editText"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:background="#FAFAFA"
+                android:foregroundGravity="center_vertical"
+                android:gravity="center_vertical"
+                android:imeOptions="actionNext"
+                android:inputType="textPersonName"
+                android:textSize="12dp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <ImageView
+            android:id="@+id/send"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginRight="9dp"
+            android:src="@drawable/send_button" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/expandLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="46dp"
+            android:layout_marginTop="15dp"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/promise"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:src="@drawable/chat_plan" />
+
+            <TextView
+                android:id="@+id/planTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="3.5dp"
+                android:fontFamily="@font/inter"
+                android:gravity="center_horizontal"
+                android:text="약속 잡기"
+                android:textColor="#8D8D8D"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="39dp"
+            android:layout_marginTop="15dp"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/image"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:src="@drawable/chat_picture" />
+
+            <TextView
+                android:id="@+id/pictureTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="3.5dp"
+                android:fontFamily="@font/inter"
+                android:gravity="center_horizontal"
+                android:text="사진 전송"
+                android:textColor="#8D8D8D"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="39dp"
+            android:layout_marginTop="15dp"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/review"
+                android:layout_width="46dp"
+                android:layout_height="46dp"
+                android:src="@drawable/cirtification_icon" />
+
+            <TextView
+                android:id="@+id/reviewTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="3.5dp"
+                android:fontFamily="@font/inter"
+                android:gravity="center_horizontal"
+                android:text="한 줄 리뷰"
+                android:textColor="#8D8D8D"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

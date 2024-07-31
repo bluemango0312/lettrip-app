@@ -1,24 +1,313 @@
 <resources>
     <string name="shopproject">travelerApplication</string>
-    <string-array name="question">
-        <item>
-            - 질문을 선택해주세요 -
-        </item>
-        <item>
-            당신의 별명은 무엇입니까?
-        </item>
-        <item>
-            당신의 아버지의 성함은?
-        </item>
-        <item>
-            당신의 보물 1호는?
-        </item>
-        <item>
-            당신의 고향은?
-        </item>
-        <item>
-            당신이 감명깊게 읽은 책은?
-        </item>
+
+    <string name="naver_client_id">hSHzjzQDqmaiM8qbHVA4</string>
+    <string name="naver_client_secret">DwmFlqg0t5</string>
+    <string name="naver_client_name">Lettrip</string>
+
+    <string name="nameHint">Nick Name</string>
+    <string name="chatRoomHint">Name of the chat room</string>
+    <string name="start">S T A R T</string>
+    <string name="emptyMessage">Nickname and Room Name should be filled!</string>
+    <string name="send">Send message ....</string>
+
+    _spinner
+    <string-array name="array_article_type">
+        <item>자유 게시판</item>
+        <item>질문 게시판</item>
+        <item>정보 게시판</item>
     </string-array>
 
+    <string-array name="array_sort_type">
+        <item>최신 순</item>
+        <item>오래된 순</item>
+        <item>조회 순</item>
+    </string-array>
+
+    <string-array name="array_cost">
+        <item>비용</item>
+        <item>0~10만원</item>
+        <item>10~20만원</item>
+        <item>20~30만원</item>
+        <item>30~40만원</item>
+        <item>40~50만원</item>
+        <item>50~60만원</item>
+        <item>60~70만원</item>
+        <item>70~80만원</item>
+        <item>80~90만원</item>
+        <item>90~100만원</item>
+        <item>100만원 이상</item>
+    </string-array>
+
+    <string-array name="array_number_of_courses">
+        <item>코스 수</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>10 이상</item>
+    </string-array>
+
+
+    <string-array name="array_theme">
+        <item>테마 선택</item>
+        <item>문화 여행</item>
+        <item>자연 여행</item>
+        <item>식도락 여행</item>
+        <item>액티비티 여행</item>
+        <item>종교 여행</item>
+        <item>휴양 여행</item>
+        <item>쇼핑 여행</item>
+    </string-array>
+
+
+    <string-array name="city_array_default">
+        <item>시 선택</item>
+    </string-array>
+
+    <string-array name="my_array_state">
+        <item>도 선택</item>
+        <item>서울특별시</item>
+        <item>광주광역시</item>
+        <item>대구광역시</item>
+        <item>대전광역시</item>
+        <item>부산광역시</item>
+        <item>울산광역시</item>
+        <item>인천광역시</item>
+        <item>강원특별자치도</item>
+        <item>경기도</item>
+        <item>경상북도</item>
+        <item>경상남도</item>
+        <item>전라북도</item>
+        <item>전라남도</item>
+        <item>충청북도</item>
+        <item>충청남도</item>
+        <item>제주특별자치도</item>
+        <item>세종특별자치시</item>
+    </string-array>
+
+    <string-array name="서울특별시">
+        <item>서울</item>
+    </string-array>
+
+    <string-array name="광주광역시">
+        <item>광주</item>
+    </string-array>
+
+    <string-array name="대구광역시">
+        <item>대구</item>
+    </string-array>
+
+    <string-array name="대전광역시">
+        <item>대전</item>
+    </string-array>
+
+    <string-array name="부산광역시">
+        <item>부산</item>
+    </string-array>
+
+    <string-array name="울산광역시">
+        <item>울산</item>
+    </string-array>
+
+    <string-array name="인천광역시">
+        <item>인천</item>
+    </string-array>
+
+    <string-array name="강원특별자치도">
+        <item>춘천시</item>
+        <item>원주시</item>
+        <item>강릉시</item>
+        <item>동해시</item>
+        <item>태백시</item>
+        <item>속초시</item>
+        <item>삼척시</item>
+        <item>홍천군</item>
+        <item>횡성군</item>
+        <item>영월군</item>
+        <item>평창군</item>
+        <item>정선군</item>
+        <item>철원군</item>
+        <item>화천군</item>
+        <item>양구군</item>
+        <item>인제군</item>
+        <item>고성군</item>
+        <item>양양군</item>
+    </string-array>
+
+    <string-array name="경기도">
+        <item>수원시</item>
+        <item>고양시</item>
+        <item>용인시</item>
+        <item>성남시</item>
+        <item>부천시</item>
+        <item>화성시</item>
+        <item>안산시</item>
+        <item>남양주시</item>
+        <item>안양시</item>
+        <item>평택시</item>
+        <item>시흥시</item>
+        <item>파주시</item>
+        <item>의정부시</item>
+        <item>김포시</item>
+        <item>광주시</item>
+        <item>광명시</item>
+        <item>군포시</item>
+        <item>하남시</item>
+        <item>오산시</item>
+        <item>양주시</item>
+        <item>이천시</item>
+        <item>구리시</item>
+        <item>안성시</item>
+        <item>포천시</item>
+        <item>의왕시</item>
+        <item>양평군</item>
+        <item>여주시</item>
+        <item>동두천시</item>
+        <item>가평군</item>
+        <item>과천시</item>
+        <item>연천군</item>
+    </string-array>
+
+
+    <string-array name="경상북도">
+        <item>포항시</item>
+        <item>경주시</item>
+        <item>김천시</item>
+        <item>안동시</item>
+        <item>구미시</item>
+        <item>영주시</item>
+        <item>영천시</item>
+        <item>상주시</item>
+        <item>문경시</item>
+        <item>경산시</item>
+        <item>의성군</item>
+        <item>청송군</item>
+        <item>영양군</item>
+        <item>영덕군</item>
+        <item>청도군</item>
+        <item>고령군</item>
+        <item>성주군</item>
+        <item>칠곡군</item>
+        <item>예천군</item>
+        <item>봉화군</item>
+        <item>울진군</item>
+        <item>울릉군</item>
+    </string-array>
+
+    <string-array name="경상남도">
+        <item>창원시</item>
+        <item>진주시</item>
+        <item>통영시</item>
+        <item>사천시</item>
+        <item>김해시</item>
+        <item>밀양시</item>
+        <item>거제시</item>
+        <item>양산시</item>
+        <item>의령군</item>
+        <item>함안군</item>
+        <item>창녕군</item>
+        <item>고성군</item>
+        <item>남해군</item>
+        <item>하동군</item>
+        <item>산청군</item>
+        <item>함양군</item>
+        <item>거창군</item>
+        <item>합천군</item>
+    </string-array>
+
+
+    <string-array name="충청북도">
+        <item>청주시</item>
+        <item>충주시</item>
+        <item>제천시</item>
+        <item>보은군</item>
+        <item>옥천군</item>
+        <item>영동군</item>
+        <item>증평군</item>
+        <item>진천군</item>
+        <item>괴산군</item>
+        <item>음성군</item>
+        <item>단양군</item>
+    </string-array>
+
+    <string-array name="충청남도">
+        <item>천안시</item>
+        <item>공주시</item>
+        <item>보령시</item>
+        <item>아산시</item>
+        <item>서산시</item>
+        <item>논산시</item>
+        <item>계룡시</item>
+        <item>당진시</item>
+        <item>금산군</item>
+        <item>부여군</item>
+        <item>서천군</item>
+        <item>청양군</item>
+        <item>홍성군</item>
+        <item>예산군</item>
+        <item>태안군</item>
+    </string-array>
+
+    <string-array name="전라남도">
+        <item>전주시</item>
+        <item>군산시</item>
+        <item>익산시</item>
+        <item>정읍시</item>
+        <item>남원시</item>
+        <item>김제시</item>
+        <item>완주군</item>
+        <item>진안군</item>
+        <item>무주군</item>
+        <item>장수군</item>
+        <item>임실군</item>
+        <item>순창군</item>
+        <item>고창군</item>
+        <item>부안군</item>
+    </string-array>
+
+    <string-array name="전라북도">
+        <item>목포시</item>
+        <item>여수시</item>
+        <item>순천시</item>
+        <item>나주시</item>
+        <item>광양시</item>
+        <item>담양군</item>
+        <item>곡성군</item>
+        <item>구례군</item>
+        <item>고흥군</item>
+        <item>보성군</item>
+        <item>화순군</item>
+        <item>장흥군</item>
+        <item>강진군</item>
+        <item>해남군</item>
+        <item>영암군</item>
+        <item>무안군</item>
+        <item>함평군</item>
+        <item>영광군</item>
+        <item>장성군</item>
+        <item>완도군</item>
+        <item>진도군</item>
+        <item>신안군</item>
+    </string-array>
+
+    <string-array name="제주특별자치도">
+        <item>제주시</item>
+        <item>서귀포시</item>
+    </string-array>
+
+    <string-array name="세종특별자치시">
+        <item>세종</item>
+    </string-array>
+
+    <string-array name="gender_options">
+        <item>남자</item>
+        <item>여자</item>
+    </string-array>
 </resources>

@@ -1,0 +1,394 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical">
+    <!--activity_meetup_post_detail-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20.5dp">
+
+            <ImageButton
+                android:id="@+id/backBtn"
+                android:layout_width="20dp"
+                android:layout_height="24dp"
+                android:layout_marginStart="18dp"
+                android:layout_marginTop="6dp"
+                android:background="@color/white"
+                android:scaleType="fitCenter"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/left_arrow_black" />
+
+            <TextView
+                android:id="@+id/Title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/inter_bold"
+                android:text="친구 매칭"
+                android:textSize="24sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingLeft="24dp"
+        android:paddingRight="24dp">
+
+        <ImageView
+            android:id="@+id/gpsInfo"
+            android:layout_width="55dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="25dp"
+            app:srcCompat="@drawable/meetup_post_gps_icon" />
+
+        <TextView
+            android:id="@+id/postTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/inter_bold"
+            android:text="전시회 동행 구해요 !!"
+            android:textSize="18sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="29dp"
+            android:layout_marginTop="7dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/city1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/mont_medium"
+                android:text="서울특별시"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/city2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2dp"
+                android:fontFamily="@font/inter"
+                android:text="서울"
+                android:textColor="#5F5F5F" />
+
+            <View
+                android:id="@+id/view14"
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:layout_weight="1" />
+
+            <Button
+                android:id="@+id/editBtn"
+                android:layout_width="55dp"
+                android:layout_height="28dp"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/meetup_post_detail_edit"
+                android:fontFamily="@font/inter"
+                android:text="수정"
+                android:textColor="#141414"
+                android:textSize="12sp" />
+
+            <Button
+                android:id="@+id/trashBtn"
+                android:layout_width="55dp"
+                android:layout_height="28dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/meetup_post_detail_edit"
+                android:fontFamily="@font/inter"
+                android:text="삭제"
+                android:textColor="#141414"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/dateSelectTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="9dp"
+            android:layout_marginBottom="17dp"
+            android:clickable="true"
+            android:focusable="false"
+            android:fontFamily="@font/inter"
+            android:text="📆 2023.10.10"
+            android:textColor="#000000"
+            android:textSize="13sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/profilePhoto"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:background="@drawable/meetup_profile_round"
+                tools:srcCompat="@tools:sample/avatars" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/userName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="9dp"
+                        android:layout_marginRight="4dp"
+                        android:fontFamily="@font/inter_semibold"
+                        android:text="박성화 (떵)"
+                        android:textSize="15sp" />
+
+                    <ImageView
+                        android:id="@+id/userSex"
+                        android:layout_width="14dp"
+                        android:layout_height="14dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginRight="4dp" />
+
+                    <TextView
+                        android:id="@+id/userBirth"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/inter"
+                        android:text="1998.04.03"
+                        android:textColor="#C0C0C0"
+                        android:textSize="9sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/line"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="17dp"
+            android:layout_marginBottom="21dp"
+            app:srcCompat="@drawable/line" />
+
+        <TextView
+            android:id="@+id/meetupPostContext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="9dp"
+            android:layout_marginRight="9dp"
+            android:background="#00FFFFFF"
+            android:ems="10"
+            android:fontFamily="@font/inter"
+            android:gravity="top"
+            android:text=" 전시회 동행 구해요! 시간은 오후 1시 정도 생각하고 있고, 기회가 된다면 전시회 가기 전에 간단하게 점심 같이 먹고 가면 좋을 것 같아요 :)"
+            android:textSize="11sp" />
+
+        <LinearLayout
+            android:id="@+id/placeLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="13dp"
+                android:layout_marginRight="13dp"
+                android:background="@drawable/meetup_add_place"
+                android:orientation="vertical"
+                android:paddingLeft="19dp"
+                android:paddingTop="16dp"
+                android:paddingRight="19dp"
+                android:paddingBottom="16dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/placeName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/inter"
+                        android:text="📍 갤러리광화"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/placeCategory"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="3dp"
+                        android:layout_weight="1"
+                        android:text="미술관"
+                        android:textColor="#B1B1B1"
+                        android:textSize="10sp" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/placeAddress"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="1dp"
+                    android:layout_marginRight="29dp"
+                    android:text="서울특별시 종로구 새문안로 103 갤러리광화빌딩 1층,2층"
+                    android:textSize="9sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/planLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/userPlanTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="11dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="13dp"
+                android:fontFamily="@font/inter_semibold"
+                android:text="☑️ 여행 계획 보러가기"
+                android:textSize="12sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="13dp"
+                android:layout_marginTop="11dp"
+                android:layout_marginRight="13dp"
+                android:background="@drawable/meetup_add_place"
+                android:orientation="vertical"
+                android:paddingLeft="21dp"
+                android:paddingTop="17dp"
+                android:paddingRight="21dp"
+                android:paddingBottom="17dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/planTitleTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/inter_semibold"
+                        android:text="서울 여행 🧳"
+                        android:textSize="11sp" />
+
+                    <TextView
+                        android:id="@+id/planDate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="7dp"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/inter"
+                        android:text="2023.10.10 ~ 2023.10.11"
+                        android:textColor="#888888"
+                        android:textSize="9sp" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/planInfo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:fontFamily="@font/inter"
+                    android:text="코스 8개 / 비용 100,000원"
+                    android:textSize="9sp" />
+
+                <TextView
+                    android:id="@+id/planCategory"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:fontFamily="@font/inter"
+                    android:text="#문화여행"
+                    android:textSize="9sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="34dp"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/pokeBtn"
+                android:layout_width="38dp"
+                android:layout_height="38dp"
+                android:background="#FFFFFF"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/poke_btn" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/pokeNumTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="11dp"
+                    android:layout_weight="1"
+                    android:text="3명이 쿸 찔렀습니다."
+                    android:textSize="11sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:id="@+id/view15"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+</LinearLayout>

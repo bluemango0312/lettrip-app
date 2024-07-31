@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical"
+    android:paddingTop="20dp"
+    android:paddingBottom="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="10dp"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/menuBtn"
+            android:layout_width="47dp"
+            android:layout_height="match_parent"
+            android:adjustViewBounds="true"
+            android:backgroundTint="@color/white"
+            android:scaleType="fitCenter" />
+
+        <EditText
+            android:id="@+id/editText_city"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@drawable/search_box"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:paddingLeft="10dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/gray" />
+
+        <ImageButton
+            android:id="@+id/button_search"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:adjustViewBounds="true"
+            android:backgroundTint="@color/white"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/search" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout_category"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/search_spinner"
+        android:orientation="horizontal">
+
+        <HorizontalScrollView
+            android:id="@+id/searchScrollView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Spinner
+                    android:id="@+id/spinner_province"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/search_spinner_item"
+                    android:elevation="4dp"
+                    android:entries="@array/my_array_state"
+                    android:popupBackground="@color/white"
+                    android:textAlignment="center" />
+
+                <Spinner
+                    android:id="@+id/spinner_city"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/search_spinner_item"
+                    android:elevation="4dp"
+                    android:entries="@array/city_array_default"
+                    android:popupBackground="@color/white"
+                    android:textAlignment="center" />
+
+                <Spinner
+                    android:id="@+id/spinner_cost"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/search_spinner_item"
+                    android:elevation="4dp"
+                    android:entries="@array/array_cost"
+                    android:popupBackground="@color/white"
+                    android:textAlignment="center" />
+
+                <Spinner
+                    android:id="@+id/spinner_number_of_courses"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/search_spinner_item"
+                    android:elevation="4dp"
+                    android:entries="@array/array_number_of_courses"
+                    android:popupBackground="@color/white"
+                    android:textAlignment="center" />
+
+                <Spinner
+                    android:id="@+id/spinner_theme"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/search_spinner_item"
+                    android:elevation="4dp"
+                    android:entries="@array/array_theme"
+                    android:popupBackground="@color/white"
+                    android:textAlignment="center" />
+            </LinearLayout>
+        </HorizontalScrollView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/RecyclerView_Travel"
+            android:layout_width="match_parent"
+            android:layout_height="315dp"
+            android:layout_marginTop="15dp"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+</LinearLayout>
